@@ -18,40 +18,40 @@ ProtoGraph.initDataApp = function () {
                 active_text_color: ProtoGraph.site['house_colour'],
                 filter_summary_text_color: ProtoGraph.site['reverse_font_colour']
             },
-            selected_heading: 'FILTERS',
-            reset_filter_text: 'Reset'
+            selected_heading: 'फिल्टर',
+            reset_filter_text: 'रीसेट'
         },
         filters: [
             {
-                "alias": "Year",
+                "alias": "वर्ष",
                 "propName": "year"
             },
             {
-                "alias": "State",
+                "alias": "राज्य",
                 "propName": "state"
             },
             {
-                "alias": "Context/bias indicator",
+                "alias": "संदर्भ / पूर्वाग्रह संकेतक",
                 "propName": "pretext_to_incident"
             },
             {
-                "alias": "Party in power",
+                "alias": "संगठन से संबद्ध था",
                 "propName": "party_in_power"
             },
             {
-                "alias": "Type of assault",
+                "alias": "हमले का प्रकार",
                 "propName": "type_of_assault"
             },
             {
-                "alias": "Source",
+                "alias": "स्रोत का प्रकार",
                 "propName": "type_of_source"
             },
             {
-                "alias": "Is FIR registered?",
+                "alias": "कथित आरोपी के खिलाफ एफआईआर दर्ज की गई?",
                 "propName": "is_fir_registered"
             },
             {
-                "alias": 'Is Cross FIR registered?',
+                "alias": 'पीड़ित के खिलाफ एफआईआर दर्ज की गई?',
                 "propName": "is_cross_fir_registered"
             }
         ]

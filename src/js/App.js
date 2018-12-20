@@ -351,7 +351,7 @@ class App extends React.Component {
               </div>
               {
                 ProtoGraph.page.summary &&
-                  <div className="summary-text">Our aim is to gather evidence regarding the nature, extent and gravity of religion-based hate violence, through rigorous methods and standards.</div>
+                  <div className="summary-text">{ProtoGraph.page.summary}</div>
               }
             </div>
             <Filter
@@ -359,16 +359,16 @@ class App extends React.Component {
               dataJSON={this.state.filteredDataJSON}
               filterJSON={this.state.filterJSON}
               onChange={(e) => {this.onChange(e);}}
-              hintText="Select a parameter to filter by its value."
+              hintText="मापदंड के मूल्य से फ़िल्टर करने के लिए उसका चयन करें "
             />
           </div>
           <div className="proto-col col-12 protograph-app-map-and-list">
               <div className="tabs-area">
-                <div className="single-tab active-tab" id='map-tab' data-href='#map-area' >MAP</div>
-                <div className="single-tab" id='list-tab' data-href='#list-area'>LIST</div>
+                <div className="single-tab active-tab" id='map-tab' data-href='#map-area' >नक्शा</div>
+                <div className="single-tab" id='list-tab' data-href='#list-area'>सूची</div>
               </div>
               <div className="tabs map-area active-area" id='map-area'>
-                <div className="map-hint-text">Click on the circle to see details of the incident</div>
+                <div className="map-hint-text">घटना के विवरण के लिए गोले पर क्लिक करें</div>
                 <Map
                   dataJSON={this.state.filteredDataJSON}
                   topoJSON={this.state.topoJSON}
